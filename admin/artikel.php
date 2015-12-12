@@ -35,12 +35,12 @@ if(isset($_SESSION['username'])){
     <div class="container-fluid">
       <div class="row">
           <aside>
-              <?php $home = "class='active'"; ?>
+              <?php $artikel = "class='active'"; ?>
               <?php include('aside.php'); ?>
           </aside>
 
           <section id="konten">
-              <?php include('home.php'); ?>
+              <?php include('data_artikel.php'); ?>
           </section>
 
       </div>

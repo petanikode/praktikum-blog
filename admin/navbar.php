@@ -7,18 +7,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Halaman Admin Blog</a>
+      <a class="navbar-brand" href="index.php"><i class="fa fa-wrench"></i> Administrator Blog</a>
     </div>
     <div class="navbar-collapse collapse">
+
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Help</a></li>
+        <li><a href="tambah_artikel.php"><i class="fa fa-pencil"></i> Tulis Artikel</a></li>
+        <li><a href="#"><i class="fa fa-user"></i> <?php echo $_SESSION['username']; ?></a></li>
+        <li><a href="logout.php" title="Log out!"><i class="fa fa-sign-out"></i> Logout</a></li>
       </ul>
-      <form class="navbar-form navbar-right">
-        <input type="text" class="form-control" placeholder="Search...">
-      </form>
     </div>
   </div>
 </div>
