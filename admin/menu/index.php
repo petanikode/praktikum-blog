@@ -2,6 +2,8 @@
 session_start();
 
 if(isset($_SESSION['username'])){
+
+    include('../../konektor.php');
 ?>
 <!-- Tampilkan halaman damin -->
 
@@ -13,18 +15,18 @@ if(isset($_SESSION['username'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../img/ArdiantaPargo.png">
+    <link rel="icon" href="../../img/ArdiantaPargo.png">
 
     <title>Administrator Blog</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../bootstrap/css/style-admin.css" rel="stylesheet">
+    <link href="../../bootstrap/css/style-admin.css" rel="stylesheet">
 
     <!-- font-awesome untuk ikon -->
-    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
 
   </head>
 
@@ -35,12 +37,12 @@ if(isset($_SESSION['username'])){
     <div class="container-fluid">
       <div class="row">
           <aside>
-              <?php $artikel = "class='active'"; ?>
+              <?php $menu = "class='active'"; ?>
               <?php include('aside.php'); ?>
           </aside>
 
           <section id="konten">
-              <?php include('data_artikel.php'); ?>
+              <?php include('data_menu.php'); ?>
           </section>
 
       </div>
@@ -49,16 +51,16 @@ if(isset($_SESSION['username'])){
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../bootstrap/js/jquery.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../bootstrap/js/holder.js"></script>
+    <script src="../../bootstrap/js/jquery.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../bootstrap/js/holder.js"></script>
   </body>
 </html>
 
 <?php
 } else {
     // suruh user login
-    header('location: login.php');
+    header('location: ../login.php');
 }
 
 ?>
