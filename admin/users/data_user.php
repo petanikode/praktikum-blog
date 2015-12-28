@@ -23,6 +23,8 @@
             echo "<td>".$data['password']."</td>";
             echo "<td>".$data['nama_lengkap']."</td>";
             echo "<td>".$data['email']."</td>";
+            echo "<td><a href='edit_user.php?id=".$data['id']."' class='btn btn-info' /><i class='fa fa-edit'></i></a>
+            <a href='hapus_user.php?id=".$data['id']."' class='btn btn-danger' /><i class='fa fa-trash'></i></a></td>";
             echo "</tr>";
         }
 

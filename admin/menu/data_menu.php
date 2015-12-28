@@ -10,7 +10,7 @@
             <th>Status</th>
             <th>Aksi</th>
         </tr>
-        
+
         <tbody>
         <?php
 
@@ -23,7 +23,7 @@
                 echo "<td>".$menu['url']."</td>";
                 echo "<td>".$menu['urutan']."</td>";
                 echo ($menu['status'] == 1) ? "<td>Aktif</td>":"<td>Non-aktif</td>";
-                echo "<td><a href='edit_menu.php?id=".$menu['id']."' class='btn btn-info'><i class='fa fa-edit'></i> Ubah</a> <a href='hapus_menu.php?id=".$menu['id']."' class='btn btn-danger'><i class='fa fa-trash'></i> Hapus</a></td>";
+                echo "<td><a href='edit_menu.php?id=".$menu['id']."' class='btn btn-info'><i class='fa fa-edit'></i></a> <a href='hapus_menu.php?id=".$menu['id']."' class='btn btn-danger'><i class='fa fa-trash'></i></a></td>";
                 echo "</tr>";
             }
 
